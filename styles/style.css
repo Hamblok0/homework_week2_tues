@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: white;
+  height: 500px;
+  padding: 20px 50px 0 50px; }
+
+section {
+  float: left;
+  width: 28%;
+  margin-left: 55px; }
+
+.panel {
+  height: 320px;
+  width: 290px;
+  border: 3px solid #6BACDA;
+  padding: 0;
+  position: relative; }
+
+.shirt1 {
+  background-image: url("../images/tblue.gif");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.shirt2 {
+  background-image: url("../images/tpink.gif");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.shirt3 {
+  background-image: url("../images/tyellow.gif");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.features {
+  position: absolute;
+  bottom: 0px;
+  width: 100%; }
+
+button {
+  border: 3px solid #6BACDA;
+  float: left;
+  position: relative;
+  width: 20%;
+  height: 35px;
+  border-bottom: none;
+  border-left: none;
+  background: white;
+  color: #6BACDA; }
+
+button:focus {
+  outline: none; }
+
+button:hover {
+  background: #6BACDA;
+  color: white; }
+  button:hover .cBox {
+    border-color: white; }
+
+p {
+  color: #78AFD6; }
+
+.shirt {
+  font-weight: lighter;
+  float: left;
+  margin-left: 5px; }
+
+.price {
+  font-weight: bold;
+  float: right;
+  margin-right: 42px; }
+
+.flip {
+  height: 25px;
+  width: 25px;
+  border-style: solid;
+  border: 3px #6BACDA solid;
+  border-top: none;
+  border-right: none;
+  position: absolute;
+  right: 0px;
+  padding: 0; }
+
+.checkout {
+  border-right: none; }
+
+.cBox {
+  height: 20px;
+  width: 20px;
+  background: #78AFD6;
+  margin-left: 11px; }
+
+.color .cBox {
+  border: 2px transparent solid; }
+
+.shirt2 .cBox {
+  background: #DD90B6; }
+
+.shirt3 .cBox {
+  background: #F8D069; }
+
+.size {
+  padding-top: 7px; }
+
+.size:hover .sizes {
+  display: block; }
+.size:hover .sizes::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 17px solid white;
+  position: absolute;
+  bottom: -15px;
+  left: 9px;
+  z-index: 1; }
+.size:hover .sizes::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 17px solid #6BACDA;
+  position: absolute;
+  bottom: -18px;
+  left: 9px;
+  z-index: 0; }
+
+.sizes {
+  background: white;
+  border: 3px solid #6BACDA;
+  position: relative;
+  bottom: 132px;
+  right: 61px;
+  height: 100px;
+  width: 55px;
+  display: none; }
+
+.colors .pink {
+  background: #DC8FB5; }
+
+.colors .blue {
+  background: #6BACDA; }
+
+.colors .orange {
+  background: #F7CF68; }
+
+.colors .green {
+  background: green; }
+
+.colors {
+  background: white;
+  border: 3px solid #6BACDA;
+  position: relative;
+  bottom: 125px;
+  right: 74px;
+  height: 60px;
+  width: 55px;
+  padding: 5px 5px 5px 5px;
+  display: none; }
+
+.colors .cBut {
+  margin-bottom: 5px;
+  margin-right: 1px;
+  height: 15px;
+  width: 15px;
+  border-style: none; }
+
+.color:hover .colors {
+  display: block;
+  bottom: 75px; }
+.color:hover .colors::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 17px solid white;
+  position: absolute;
+  bottom: -15px;
+  left: 9px;
+  z-index: 1; }
+.color:hover .colors::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 17px solid #6BACDA;
+  position: absolute;
+  bottom: -18px;
+  left: 9px;
+  z-index: 0; }
+
+/*# sourceMappingURL=style.css.map */
